@@ -1,0 +1,19 @@
+{
+  "name": "learn-effect-ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.77.4",
+    "@effect/platform-bun": "^0.57.4",
+    "@effect/platform-node": "^0.73.4",
+    "@effect/schema": "^0.75.5",
+    "effect": "^3.13.4"
+  }
+}
