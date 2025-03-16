@@ -1,6 +1,6 @@
 //https://effect.website/docs/getting-started/creating-effects/#succeed
 //
-import { Effect } from "effect"
+import { Stream, Effect } from "effect"
 
 // Define a User type
 interface User {
@@ -26,7 +26,14 @@ const getUser = (userId: number): Effect.Effect<User, Error> => {
 	}
 }
 
-// When executed, this will successfully return the user with id 1
-const exampleUserEffect = getUser(2)
-const result = Effect.runSync(exampleUserEffect)
-console.log(result._tag === "Success")
+{
+	const exampleUserEffect = getUser(2)
+	const result = Effect.runSyncExit(exampleUserEffect)
+	console.log(result._tag === "Success")
+}
+
+{
+	const exampleUserEffect = getUser(4)
+	const result = Effect.runSyncExit(exampleUserEffect)
+	console.log(result._tag === "Success")
+}
