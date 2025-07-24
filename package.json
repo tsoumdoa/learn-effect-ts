@@ -4,16 +4,17 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.2.19"
   },
   "peerDependencies": {
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@effect/platform": "^0.77.7",
-    "@effect/platform-bun": "^0.57.7",
-    "@effect/platform-node": "^0.73.7",
+    "@effect/language-service": "^0.28.3",
+    "@effect/platform": "^0.90.0",
+    "@effect/platform-bun": "^0.77.0",
+    "@effect/platform-node": "^0.94.0",
     "@effect/schema": "^0.75.5",
-    "effect": "^3.13.11"
+    "effect": "^3.17.1"
   }
 }
